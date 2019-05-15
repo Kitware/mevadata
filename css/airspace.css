@@ -69,6 +69,7 @@ a:active {
   background: #00a651;
   border-radius: 3px;
   color: #fff !important;
+  cursor: pointer;
   display: inline-block;
   padding: 10px 20px !important;
   text-transform: uppercase;
@@ -171,9 +172,14 @@ font header .navbar-default .navbar-nav li a:hover {
   line-height: 27px;
   margin: 0;
 }
+#intro .block h3 {
+  padding-top: 25px;
+  line-height: 32px;
+  margin: 0;
+}
 #intro .block p {
   color: #7B7B7B;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 #intro .block img {
   padding-left: 40px;
@@ -184,6 +190,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #intro .section-title p {
   padding-top: 20px;
+  color: #454545;
 }
 /*--
 	service Start
@@ -210,6 +217,17 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 0;
   font-size: 14px;
   line-height: 1.8;
+}
+
+#service .service-item .button-primary {
+  margin-top: 30px;
+}
+
+#service .section-title {
+  padding: 0 45px;
+}
+#service .section-title p {
+  font-size: 18px;
 }
 /*--
 	call-to-action Start
@@ -257,7 +275,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Feature Start
 --*/
 #feature {
-  background: url("../img/featue-bg.jpg");
+  background: url("../img/meva_logo_bg.jpg");
   background-position: 50% 94px;
   width: 100%;
   display: block;
