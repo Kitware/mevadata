@@ -849,3 +849,9 @@ footer .footer-manu ul li a {
 footer .footer-manu ul li a:hover {
   color: #000;
 }
+
+.vp-view {
+  border-top: 1px solid #eeeeee;
+  margin-top: 15px;
+  padding-top: 30px;
+}
