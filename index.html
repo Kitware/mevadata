@@ -12,7 +12,7 @@ permalink: /
         <h1 class="animated fadeInUp">The Multivew Extended Video with Activities (MEVA) dataset</h1>
         <p class="animated fadeInUp"> The large-scale MEVA dataset is designed for activity
           detection in multi-camera environments. It was created on the Intelligence Advanced
-          Research Projects Activity (IARPA) Deep Intermodal Video Analytics (DIVA) program
+          Research Projects Activity (IARPA) Deep Intermodal Video Analytics (DIVA) program 
           to support DIVA performers and the broader research community.</p>
       </div>
     </div>
@@ -37,12 +37,12 @@ permalink: /
             non-scripted activities, including scripted threat activities such as abandoning
             packages and theft.</p>
           <p>The camera infrastructure included commercial-off-the-shelf EO cameras; thermal
-            infrared cameras as part of several IR-EO pairs; 4K video data from multiple UAVs; and
+            infrared cameras as part of several IR-EO pairs; and
             a range of still images from handheld cameras.</p>
           <p>Additional resources such as a facility site map, camera model information, and camera
             calibration models will be also be released.</p>
-          <p>The videos provide a sample of the outdoor MEVA data. A packet of sample videos can be downloaded
-            from [ADD DOWNLOAD LINK HERE].</p>
+          <p>The videos provide a sample of the outdoor MEVA data. A packet of sample videos is available <a href="resources/meva-teaser-samples.zip">
+		  for download as a zip file</a>.</p>
         </div>
       </div><!-- .col-md-7 close -->
       <div class="col-md-5 col-sm-12">
@@ -67,11 +67,15 @@ permalink: /
   <div class="row">
     <div class="col-md-6 col-md-offset-6">
       <h2>ACCESSING AND USING MEVA</h2>
-      <p>MEVA data is available for use under a CC BY-4.0 license (full license text available). Sample videos
-        are provided [DOWNLOADA LINK HERE]. The full corpus of data is available for download via an Amazon Web Services
-      requester-pays paradigm. The full-scale videos in the download are approximately [SIZE OF DATA HERE]. </p>
-      <p>The <a href="#">README</A> details the directory structure and organization of the data available on AWS.</p>
-      <a href="#" class="button-primary">Download Example Videos</a>
+      <p>MEVA data is available for use under a CC BY-4.0 license (full license text available). A selection of sample videos
+        is provided in a zip file.</p>
+	<a href="resources/meva-teaser-samples.zip" class="button-primary">Download Example Videos</a>
+		<p>The full corpus of data is available for download via an Amazon Web Services
+      requester-pays paradigm. The full-scale videos in the AWS download are approximately [SIZE OF DATA HERE]. Additional resources:</p>
+      <ul>
+	  <li><a href="resources/README-meva-data.txt">MEVA README</A>, which details the directory structure and organization of the data</li>
+	  <li><a href="resources/MEVA-data-license.txt">MEVA License</a></li>
+	  </ul>
     </div>
   </div>
 </div>
@@ -100,9 +104,9 @@ permalink: /
         <div class="service-item">
           <i class="ion-code-download"></i>
           <h4>Review Annotation Guidelines</h4>
-          <p>Download the current DIVA activity definitions. These should guide which activities
-            and objects are annotated. (available only to DIVA performers)</p>
-          <a href="#" class="button-primary">Download</a>
+          <p>Download the current activity definitions. These should guide which activities
+            and objects are annotated.</p>
+          <a href="resources/Performers-MEVA-Annotation-Definitions.pdf" class="button-primary">Download</a>
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
@@ -113,18 +117,20 @@ permalink: /
             json file formats <strong>(comma separated list of file formats here)</strong></p>
         </div>
       </div>
-    </div>
-    <div class="row vp-view">
-      <div class="block">
-          <p><strong>Kitware’s Vp-View tool</strong> can be downloaded [ADD DOWNLOAD LINK] and used to create annotations for the
-            DIVA program. There is a document that outlines how to use Vp-View for DIVA annotations.
-            Note that the annotations being created for the T&E effort on DIVA
-            do not include full tracks; individuals, vehicles, or objects are only annotated during the
-            execution of an activity. See the DIVA Annotation Guidelines [ADD LINK] for a chart of track
-            requirements per activity type.</p>
+      <div class="row vp-view">
+		<div class="block">
+          <p>Kitware’s Vp-View tool can be used for creating the activity annotations.
+			Note that the annotations being created for the T&E effort on DIVA 
+            do not include full tracks; individuals, vehicles, or objects are only annotated during the 
+            execution of an activity. To get started using Vp-View, the following resources are available:</p>
+			<ul>
+				<li><a href="FILLIN">Vp-View installer (Linux only)</a></li>
+				<li><a href="resources/Performers-MEVA-Annotation-Definitions.pdf"> Annotation Definitions</a>, including chart of track requirements per activity type.</li>
+				<li>Annotating with Vp-View instructions</li>
+			</ul>
+		</div>
       </div>
     </div>
-  </div>
 </section>
 
 {% comment %}
