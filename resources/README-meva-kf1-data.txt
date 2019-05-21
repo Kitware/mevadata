@@ -62,9 +62,7 @@ may be shorter than five minutes due to transmission errors.
 4.0 MEVA Known Facility Definitions
 
 This 1.0 release of the MEVA dataset releases the MEVA Known Facility
-set 1 (KF1). Various metadata, including a facility site map, camera
-model information, and more are on this drive in the â€˜doc/KF1â€™
-directory.
+set 1 (KF1). Please see https://mevadata.org for more details.
 
 5.0 License & Citation
 
