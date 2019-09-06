@@ -20,11 +20,10 @@ camera G639.
 
 The MEVA Known Facility Dataset 1 ("KF1") is 2,223 video clips
 totalling 295GB. It is available via Amazon Simple Storage Service
-(S3) in a Requester Pays bucket; at a transfer cost of $0.09USD per
-gigabyte, the estimated download cost is approximately $27USD. The S3
-bucket for MEVA KF1 is
+(S3) via a no-cost download sponsored by Amazon's AWS Public Dataset
+Program. The s3 bucket name is:
 
-  mevadata-kf1-requester-pays
+  mevadata-public-01
 
 Several command line tools and GUI clients are available for
 downloading from S3, e.g. s3cmd, available at
@@ -47,10 +46,10 @@ filenames have the following structure:
 YYYY-MM-DD.timestamp-start.timestamp-end.camera-location.camera-number.
 
 For example, file 2018-03-07.16-50-00.16-55-00.admin.G329.avi was:
-    * Recorded on March 7, 2018 starting at 16:50:00. 
-    * Recording ends at 16:55:00. 
+    * Recorded on March 7, 2018 starting at 16:50:00.
+    * Recording ends at 16:55:00.
     * The camera was located in/on the admin building (see metadata, below).
-    * The camera number was G329. 
+    * The camera number was G329.
 
 The video data is organized into a four-level hierarchy of facility
 id, date, then hour, then videos. Data was recorded on several NAS
@@ -80,5 +79,6 @@ collection work is supported by Intelligence Advanced Research
 Projects Activity contract number 2017-16110300001.
 
 7.0 Changelog
+06-sep-2019: Updated for AWS Public Dataset Program access
 21-may-2019: Adapted for mevadata.org
 25-mar-2019: Initial release
