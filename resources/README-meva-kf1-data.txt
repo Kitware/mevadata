@@ -18,10 +18,10 @@ camera G639.
 
 2.0 Access
 
-The MEVA Known Facility Dataset 1 ("KF1") is 2,223 video clips
-totalling 295GB. It is available via Amazon Simple Storage Service
-(S3) via a no-cost download sponsored by Amazon's AWS Public Dataset
-Program. The s3 bucket name is:
+The MEVA Known Facility Dataset 1 ("KF1") is approximately 254 hours
+of video across 3,370 video clips totalling 405GB. It is available via
+Amazon Simple Storage Service (S3) via a no-cost download sponsored by
+Amazon's AWS Public Dataset Program. The s3 bucket name is:
 
   mevadata-public-01
 
@@ -38,6 +38,12 @@ fitness for a particular use. Please do not contact Kitware for
 assistance with Amazon services.
 
 3.0 Directory Structure & Filenames
+
+The data is divided into several drops; each drop has the same
+directory structure. As of this writing, there are two drops:
+
+- drop-01 : 2224 clips / 298 GB / 184 hours
+- drop-02 : 1146 clips / 107 GB / 70 hours
 
 The directory organization follows a video/facility/date/hour/video
 clip structure. Video files are typically five minutes in length, and
@@ -56,7 +62,9 @@ id, date, then hour, then videos. Data was recorded on several NAS
 units whose clocks were synchronized via GPS. The NAS software was
 configured to record five-minute clips; however, clips do not all
 necessarily start or stop on even five-minute boundaries. A few clips
-may be shorter than five minutes due to transmission errors.
+may be shorter than five minutes due to transmission errors or
+collection event anomalies. In particular, some clips in drop-02 were
+collected at the beginning of the event and may be shorter than five minutes.
 
 4.0 MEVA Known Facility Definitions
 
@@ -79,6 +87,7 @@ collection work is supported by Intelligence Advanced Research
 Projects Activity contract number 2017-16110300001.
 
 7.0 Changelog
+24-sep-2019: Updated for drop-02
 06-sep-2019: Updated for AWS Public Dataset Program access
 21-may-2019: Adapted for mevadata.org
 25-mar-2019: Initial release
