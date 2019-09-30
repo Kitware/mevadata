@@ -27,12 +27,19 @@ Amazon's AWS Public Dataset Program. The s3 bucket name is:
 
 Several command line tools and GUI clients are available for
 downloading from S3, e.g. s3cmd, available at
-https://s3tools.org/s3cmd . Kitware does not endorse or warrant the
-utility of any particular S3 client.
+https://s3tools.org/s3cmd . Once installed, commands similar to
 
-Your use of Amazon S3 is subject to Amazon's Terms of Use. The
-accessibility of the MEVA KF1 data from Amazon S3 is provided "as
-is" without warranty of any kind, expressed or implied, including,
+$ aws s3 sync s3://mevadata-public-01/drop-01 .
+$ aws s3 sync s3://mevadata-public-01/drop-02 .
+
+...will synchronize both drop-01 and drop-02 (described below) into
+the current directory.
+
+
+Kitware does not endorse or warrant the utility of any particular S3
+client.  Your use of Amazon S3 is subject to Amazon's Terms of
+Use. The accessibility of the MEVA KF1 data from Amazon S3 is provided
+"as is" without warranty of any kind, expressed or implied, including,
 but not limited to, the implied warranties of merchantability and
 fitness for a particular use. Please do not contact Kitware for
 assistance with Amazon services.
@@ -87,6 +94,7 @@ collection work is supported by Intelligence Advanced Research
 Projects Activity contract number 2017-16110300001.
 
 7.0 Changelog
+30-sep-2019: Updated with sample download commands
 24-sep-2019: Updated for drop-02
 06-sep-2019: Updated for AWS Public Dataset Program access
 21-may-2019: Adapted for mevadata.org
