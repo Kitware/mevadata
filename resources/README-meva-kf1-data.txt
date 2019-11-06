@@ -35,7 +35,6 @@ $ aws s3 sync s3://mevadata-public-01/drop-02 .
 ...will synchronize both drop-01 and drop-02 (described below) into
 the current directory.
 
-
 Kitware does not endorse or warrant the utility of any particular S3
 client.  Your use of Amazon S3 is subject to Amazon's Terms of
 Use. The accessibility of the MEVA KF1 data from Amazon S3 is provided
@@ -47,10 +46,11 @@ assistance with Amazon services.
 3.0 Directory Structure & Filenames
 
 The data is divided into several drops; each drop has the same
-directory structure. As of this writing, there are two drops:
+directory structure. As of this writing, there are three drops:
 
 - drop-01 : 2224 clips / 298 GB / 184 hours
 - drop-02 : 1146 clips / 107 GB / 70 hours
+- uav-drop-01 : 45 clips / 26 GB / 4.6 hours
 
 The directory organization follows a video/facility/date/hour/video
 clip structure. Video files are typically five minutes in length, and
@@ -65,13 +65,19 @@ For example, file 2018-03-07.16-50-00.16-55-00.admin.G329.avi was:
     * The camera number was G329.
 
 The video data is organized into a four-level hierarchy of facility
-id, date, then hour, then videos. Data was recorded on several NAS
+id, date, then hour, then videos. Ground-camera data was recorded on several NAS
 units whose clocks were synchronized via GPS. The NAS software was
 configured to record five-minute clips; however, clips do not all
 necessarily start or stop on even five-minute boundaries. A few clips
 may be shorter than five minutes due to transmission errors or
 collection event anomalies. In particular, some clips in drop-02 were
-collected at the beginning of the event and may be shorter than five minutes.
+collected at the beginning of the event and may be shorter than five
+minutes.
+
+UAV data was collected by a pair of DJI drones at 3840x2160 @ 30fps;
+more details can be found in the UAV data readme at
+
+https://s3.amazonaws.com/mevadata-public-01/uav-drop-01/meva-uav-drop-01-readme.pdf
 
 4.0 MEVA Known Facility Definitions
 
@@ -94,6 +100,7 @@ collection work is supported by Intelligence Advanced Research
 Projects Activity contract number 2017-16110300001.
 
 7.0 Changelog
+06-nov-2019: Updated for UAV drop-01
 30-sep-2019: Updated with sample download commands
 24-sep-2019: Updated for drop-02
 06-sep-2019: Updated for AWS Public Dataset Program access
