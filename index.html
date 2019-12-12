@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Mevadata
-permalink: /index-2.html
+permalink: /
 ---
 
 <base href="{{ site.baseurl }}/" />
+
 <!-- Slider Start -->
 <section id="slider">
   <div class="container">
@@ -14,14 +15,18 @@ permalink: /index-2.html
         <p class="animated fadeInUp"> The large-scale MEVA dataset is designed for activity
           detection in multi-camera environments. It was created on the Intelligence Advanced
           Research Projects Activity (IARPA) Deep Intermodal Video Analytics (DIVA) program 
-          to support DIVA performers and the broader research community.</p>
-        <p class="animated fadeInUp"><strong>NEWS:<br>12 December 2019:
-        We've added drop-03, adding 70 hours of ground-cam video for a
-        total of 333 hours of ground-camera and UAV video.<br>
-        26 November 2019: We're pleased to announce annotations for an
+          to support DIVA performers and the broader research
+        community.</p>
+        <p class="animated fadeInUp"><strong>NEWS: 26 November 2019: We're pleased to announce annotations for an
 		addition 3.5 hours of MEVA data, resulting in 16 hours of annotated data!
 		Annotations are available via the
 		<a href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/annotation/DIVA-phase-2/MEVA/meva-annotations" style="color:#95e97a">git repository</a>.<br/>
+		13 Nov 2019: We're excited to announce the release of annotations for 12.5 hours of the MEVA KF1 dataset.<br/>		
+		6 Nov 2019: We're pleased to announce the release of 4.6 hours of UAV data! See
+        the <a 
+        href="https://s3.amazonaws.com/mevadata-public-01/uav-drop-01/meva-uav-drop-01-readme.pdf"
+        style="color:#95e97a">UAV
+        data readme</a> for more details.</p>
       </div>
     </div>
   </div>
@@ -34,34 +39,35 @@ permalink: /index-2.html
         <div class="block">
           <div class="section-title">
             <h2>About MEVA data</h2>
-          </div> <!-- section title  -->
+          </div>
           <p>
           MEVA aims to build a corpus of activity video collected from
           multiple viewpoints in realistic settings.</p>
-
+		  
 		  <p>
 		  There is a MEVA data users Google group to facilitate communication and collaboration 
 		  for those interested in working with the data. Join the conversation through the
 		  <a href="https://groups.google.com/forum/#!forum/meva-data-users">meva-data-users group</a>. </p>
-
-          <h2>Releases</h2>
-          <h3>Known Facility Release #1 ("KF1"):</h3>
-
-          <p> The KF1 data was collected over a total of three weeks
-          at the Muscatatuck Urban Training Center (MUTC) with a team of over
-          100 actors performing in various scenarios.  The fields of
-          view, both overlapping and non-overlapping, capture person
-          and vehicle activities in indoor and outdoor
-          environments. There were multiple realistic scenarios with a
-          variety of scripted and non-scripted activities.</p>
-
-          <p>The camera infrastructure included
-            commercial-off-the-shelf EO cameras; thermal infrared
-            cameras as part of several IR-EO pairs; two DJI Inspire 1
-            v2 drones, and a range of still images from handheld
-            cameras.</p>
-
-          </div> <!-- block -->
+		
+          <h3>Releases</h3>
+          <p><strong>Known Facility Release #1 ("KF1"):</strong>
+          <p>
+          The KF1 data release contains approximately 254 hours of
+          ground camera video and an additional 4.6 hours of UAV
+          video, collected at the Muscatatuck Urban Training Center
+            with a team of over 100 actors performing in various scenarios. The fields of view, both
+            overlapping and non-overlapping, capture person and vehicle activities in indoor and outdoor
+            environments. There were multiple realistic scenarios with a variety of scripted and
+            non-scripted activities.</p>
+          <p>The camera infrastructure included commercial-off-the-shelf EO cameras; thermal
+            infrared cameras as part of several IR-EO pairs; two DJI
+          Inspire 1 v2 drones, and
+          a range of still images from handheld cameras.</p>
+          <p>Additional resources such as a facility site map, camera model information, and camera
+            calibration models will be also be released.</p>
+          <p>The video to the right is a montage of randomly selected
+          KF1 clips, re-encoded for faster playback.
+        </div>
 
       </div><!-- .col-md-5 close -->
       <div class="col-md-7 col-sm-12">
@@ -70,82 +76,54 @@ permalink: /index-2.html
             <source src="video/mevadata-kf1-sample-footage.mp4" type="video/mp4">
             Sorry, your browser doesn't support embedded videos.
           </video>
-          Montage of randomly selected KF1 ground camera clips (re-encoded for accelerated playback.)
-        </div> <!-- block -->
-        <div class="block">
-          <video controls width="100%" style="margin: 32px 0 20px;">
-            <source src="video/uav-clips.mp4" type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-          Montage of randomly selected KF1 UAV video (re-encoded for accelerated playback.)
-        </div> <!-- block-->
-      </div> <!-- col -->
-    </div> <!-- row -->
-  </div> <!-- container -->
+        </div>
+      </div><!-- .col-md-7 close -->
+    </div>
+  </div>
 </section>
 
 <section id="feature">
-  <div class="container">
+<div class="container">
   <div class="row">
-    
-  <div class="col-md-6 col-sm-12">
-  <div class="block">
-    <video controls width="100%" style="margin: 32px 0 0px;">
-    <source src="video/mesh-standin-scaled-fast.mp4" type="video/mp4">
-    Sorry, your browser doesn't support embedded videos.
-    </video>
-    <p style="text-align:center;background-color: #EEEEEE">Visualization of the fine-grained MUTC 3D model.</p>
-  </div> <!-- block -->
-  <div class="block">
-    <video controls width="100%" style="margin: 32px 0 0px;">
-    <source src="video/2018-03-11.16-20-00.16-25-00.school.G330.annotated.mp4" type="video/mp4">
-    Sorry, your browser doesn't support embedded videos.
-    </video>
-    <p style="text-align:center;background-color: #EEEEEE">Annotation sample (accelerated for display.)</p>
-  </div> <!-- block -->
-  </div><!-- .col-md-7 close -->
-<!--  <div class="col-md-6 col-md-offset-6">   -->
-  <div class="col-md-6 col-md-12">
+  <div class="col-md-6 col-md-offset-6">
     <div id="getting-data">
       <h2>ACCESSING AND USING MEVA</h2>
-      <h3>License</h3>
       <p>All MEVA data is available for use under a <a
       href="https://creativecommons.org/licenses/by/4.0/">CC BY-4.0
       license</a>; the general MEVA data license is available <a
-      href="resources/MEVA-data-license.txt">here</a>.</p>
-      <h3>Video data on AWS</h3>
-      <p>MEVA video data is hosted on an Amazon Web Services (AWS) S3 bucket; download is provided at no cost via
-      sponsorship through <a href="https://aws.amazon.com/opendata/public-datasets/">Amazon's AWS Public Dataset Program</a>.</p>
-      <pnm>As of 12 Dec 2019, the video corpus includes:</pnm>
-          <ul>
-            <li> 328 hours (516GB) of ground camera data
-            <li> 4.6 hours (26GB) of UAV data
-          </ul>
-          <h4><a href="resources/README-meva-kf1-data.txt">Click here for download instructions.</a></h4>
+      href="resources/MEVA-data-license.txt">here</a>. MEVA-KF1
+      resources include:
+      <p>
 
-       <h3>MEVA data git repository</h3>
-          <p>The <a href="https://gitlab.kitware.com/meva/meva-data/repo">MEVA data git repository</a> is an evolving collection of metadata and annotations released for the MEVA KF1 data. Highlights include:</p>
-          <h4>Metadata</h4>
-          <ul>
-            <li> KF1 metadata package, including: a PDF of the site
+      <strong>The main corpus of 405GB of ground-camera and 26GB of
+        UAV video files, available for
+        download via AWS. Downloading MEVA is available for free via
+        sponsorship through <a href="https://aws.amazon.com/opendata/public-datasets/">Amazon's AWS Public Dataset Program</a>. </strong><br><a href="resources/README-meva-kf1-data.txt"
+        class="button-primary">Download Access Instructions</a><p>
+         A selection of sample videos is available, including
+      one-minute raw samples and scaled versions of complete
+      five-minute clips.<br>
+	<a href="https://data.kitware.com/#item/5cddc7ff8d777f072bb0b78b" class="button-primary">Download Example Videos</a>
+      <p>
+      Various collection metadata, including: a PDF of the site
         map with approximate camera locations and sample FOVs, a list
-      of all files in the KF1 corpus, and camera datasheets.
-            <a href="https://data.kitware.com/#item/5ce40a518d777f072bc1e920">Click to download metadata package.</a>
-            <li> Camera models in KRTD format (<a href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/metadata/camera-models">gitlab link</a>)
-            <li> 3D site model of MUTC in <a href="https://en.wikipedia.org/wiki/PLY_(file_format)">PLY format</a>, available in <a href="https://mevadata-public-01.s3.amazonaws.com/mutc-3d-model/mutc.ply"> fine (293MB)</a> and <a href="https://mevadata-public-01.s3.amazonaws.com/mutc-3d-model/mutc_coarse.ply">coarse (83MB)</a> resolutions
-            </ul>
+      of all files in the KF1 corpus, and camera datasheets.<br>
+      <a href="https://data.kitware.com/#item/5ce40a518d777f072bc1e920"
+      class="button-primary">Download Metadata</a>
+	  
+	  <p>
+      Annotations have been released for a subset of the MEVA KF1 data. These annotations follow the 
+	  <a href="https://gitlab.kitware.com/meva/meva-data-repo/blob/master/documents/MEVA-Annotation-Definitions.pdf">ActEV Annoation Definitions for MEVA data</a>.
+	  Each clip for which annotations are provided has been fully annotated for the 37 activity types. The annotations are released in KPF format, and the spec for 
+	  KPF is available <a href="https://gitlab.kitware.com/meva/meva-data-repo/blob/master/documents/KPF-specification-v4.pdf"> here (KPF spec)</>. 
+      <br>
+      <a href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/annotation/DIVA-phase-2/MEVA/meva-annotations"
+      class="button-primary">Download Annotations</a>
 
-            <h4>Annotations</h4>
-            <pnm>A subset of the MEVA KF1 data has been annotated for the activities defined in the <a href="https://actev.nist.gov">NIST ActEV Challenge</a>. The released annotations were generated by the same workflow used to produce the sequestered annotations used on the <a href="https://actev.nist.gov/sdl">ActEV Sequestered Data Leaderboard.</a> Resources include:</pnm>
-            <ul>
-              <li> The <a href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/annotation/DIVA-phase-2/MEVA/">annotations</a>.
-              <li> The <a href="https://gitlab.kitware.com/meva/meva-data-repo/blob/master/documents/MEVA-Annotation-Definitions.pdf">ActEV Annoation Definitions</a> for MEVA data.
-              <li> Renderings of <a href="https://data.kitware.com/#item/5cddc85b8d777f072bb0b7aa">activity exemplars</a>.
-              </ul>
-      </div> <!-- block -->
-      </div>  <!-- col -->
-  </div>  <!-- row -->
-</div>  <!-- container -->
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="service">
