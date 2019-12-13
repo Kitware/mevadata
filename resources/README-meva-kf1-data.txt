@@ -18,8 +18,8 @@ camera G639.
 
 2.0 Access
 
-The MEVA Known Facility Dataset 1 ("KF1") is approximately 254 hours
-of video across 3,370 video clips totalling 405GB. It is available via
+The MEVA Known Facility Dataset 1 ("KF1") is approximately 331 hours
+of video across 4304 video clips totalling 570 GB. It is available via
 Amazon Simple Storage Service (S3) via a no-cost download sponsored by
 Amazon's AWS Public Dataset Program. The s3 bucket name is:
 
@@ -49,7 +49,8 @@ The data is divided into several drops; each drop has the same
 directory structure. As of this writing, there are three drops:
 
 - drop-01 : 2224 clips / 298 GB / 184 hours
-- drop-02 : 1146 clips / 107 GB / 70 hours
+- drop-02 : 1184 clips / 107 GB / 74 hours
+- drop-03 : 852 clips / 111 GB / 70 hours
 - uav-drop-01 : 45 clips / 26 GB / 4.6 hours
 
 The directory organization follows a video/facility/date/hour/video
@@ -100,6 +101,7 @@ collection work is supported by Intelligence Advanced Research
 Projects Activity contract number 2017-16110300001.
 
 7.0 Changelog
+12-dec-2019: Updated for drop-03
 06-nov-2019: Updated for UAV drop-01
 30-sep-2019: Updated with sample download commands
 24-sep-2019: Updated for drop-02
