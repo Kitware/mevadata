@@ -118,6 +118,7 @@ collection work is supported by Intelligence Advanced Research
 Projects Activity contract number 2017-16110300001.
 
 7.0 Changelog
+29-apr-2019: Updated for section 3.1
 12-dec-2019: Updated for drop-03
 06-nov-2019: Updated for UAV drop-01
 30-sep-2019: Updated with sample download commands
