@@ -48,8 +48,8 @@ assistance with Amazon services.
 The data is divided into several drops; each drop has the same
 directory structure. As of this writing, there are three drops:
 
-- drop-01 : 2224 clips / 298 GB / 184 hours
-- drop-02 : 1184 clips / 107 GB / 74 hours
+- drop-01 : 2223 clips / 292 GB / 184 hours
+- drop-02 : 1054 clips / 112 GB / 72.9 hours
 - drop-03 : 852 clips / 111 GB / 70 hours
 - uav-drop-01 : 45 clips / 26 GB / 4.6 hours
 
@@ -79,6 +79,23 @@ UAV data was collected by a pair of DJI drones at 3840x2160 @ 30fps;
 more details can be found in the UAV data readme at
 
 https://s3.amazonaws.com/mevadata-public-01/uav-drop-01/meva-uav-drop-01-readme.pdf
+
+3.1 Dataset updates
+
+29 April 2020: Two dataset updates:
+
+- A block of 130 video clips from camera G328 were identified as
+corrupted, and have been removed. The clips are from 2018-03-05,
+between 10:10:16 and 11:23:54am.
+
+- Camera G639 was mounted sideways. The 83 videos on AWS have been
+replaced with rotated versions so that up in the world is also up in
+the video.
+
+The complete list of affected videos may be found at
+
+http://mevadata.org/resources/update-20200429.txt
+
 
 4.0 MEVA Known Facility Definitions
 
