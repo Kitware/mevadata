@@ -22,7 +22,7 @@ permalink: /
           24 Feb 2021: We've included a link to our <a
           href="https://openaccess.thecvf.com/content/WACV2021/html/Corona_MEVA_A_Large-Scale_Multiview_Multimodal_Video_Dataset_for_Activity_Detection_WACV_2021_paper.html">WACV
           2021 paper</a> on the MEVA collection in the <a
-        href="#citing">citing MEVA</a> section.
+        href="#citing-meva">citing MEVA</a> section.
         29 April 2020: We've updated the video data to remove a block
         of 130 corrupted videos for the G328 camera, and to rotate all 83
         instances of the G639 camera. See Section 3.1 of the <a
@@ -61,6 +61,21 @@ permalink: /
 		  for those interested in working with the data. Join the conversation through the
 		  <a href="https://groups.google.com/forum/#!forum/meva-data-users">meva-data-users group</a>. </p>
 
+          <h2>Citing MEVA</h2>
+          <div id="citing-meva">
+          The dataset is described in a
+            href="https://openaccess.thecvf.com/content/WACV2021/html/Corona_MEVA_A_Large-Scale_Multiview_Multimodal_Video_Dataset_for_Activity_Detection_WACV_2021_paper.html">WACV 2021 paper</a>. The bibtex citation is:
+            <pre>
+@InProceedings{Corona_2021_WACV,
+    author    = {Corona, Kellie and Osterdahl, Katie and Collins, Roderic and Hoogs, Anthony},
+    title     = {MEVA: A Large-Scale Multiview, Multimodal Video Dataset for Activity Detection},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2021},
+    pages     = {1060-1068}
+}
+            </pre>
+            </div>
           <h2>Releases</h2>
           <h3>Known Facility Release #1 ("KF1"):</h3>
 
@@ -167,6 +182,7 @@ permalink: /
                 <li> <a href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/annotation/DIVA-phase-2/MEVA/kitware-meva-training">Training-level annotations</a>: This is an ongoing effort to annotate the remainder of the released KF1 video using the same workflow as the evaluation-level annotations, but with a reduced audit step so that annotations may not be quite as accurate as evaluation-level. We expect to add more annotations weekly; please see <a href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/annotation/DIVA-phase-2/MEVA/kitware-meva-training/README.md">the readme</a> for the current status.</li>
                 <li> <a href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/annotation/DIVA-phase-2/MEVA/contrib">Contributed annotations</a> from the community; see <a href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/annotation/DIVA-phase-2/MEVA/contrib/README.md">the readme</a> for more details. We welcome your contributions; see <a href="#contributing-annotations">here</a> for details.</li>
               </ul>
+              </div> <!-- annotations block -->
       </div> <!-- block -->
       </div>  <!-- col -->
   </div>  <!-- row -->
@@ -178,9 +194,10 @@ permalink: /
     <div class="row">
       <div class="section-title">
         <h2>Annotating MEVA</h2>
-        <div id="contributing-annotations"</div>
+        <div id="contributing-annotations">
         <p>The MEVA data can be annotated using your preferred annotation toolchain. For annotating
           and using the MEVA data, the following steps are recommended:</p>
+        </div>
       </div>
     </div>
     <div class="row ">
