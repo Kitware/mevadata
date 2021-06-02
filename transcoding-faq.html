@@ -24,11 +24,15 @@ We are planning to replace all ground camera videos (from the
       these files contain errors which prevent software such as ffmpeg
       from, for example, seeking to random points in the video. The
       transcoded versions should have fewer errors in general and support
-      seeking in particular.
+seeking in particular.
+
+
+<br><br><h4>What happens next?</h4>
+A selection of transcoded videos are available for review (see below); we invite your feedback and questions. Our current plan is to switch the videos over sometime on the weekend of June 19-20, 2021.
 
 <br><br><h4>Where can the sample transcoded videos be obtained?</h4>
       We've uploaded 630 transcoded videos (about 67GB); they can be downloaded via e.g.
-      <br>
+      <br><p>
       <tt>aws s3 sync s3://mevadata-public-01/recode-r13-samples your-local-directory</tt>
 
 
@@ -38,7 +42,7 @@ The transcoded videos are still H.264 in an AVI container.
 <br><br><h4>How have the videos been transcoded?</h4>
 The general process was that each video was broken out into frames;
       these frames were then recombined back into the transcoded
-      video. The script used is available at [link]. The DIVA
+      video. The script used is <a href="resources/transcode-meva-r13.pl">available</a>. The DIVA
       performers and evaluation team conducted several rounds of
       experiments before settling on the final transcoding parameters,
       which are:
@@ -71,8 +75,8 @@ No, a small number were too corrupted to be transcoded.
 <br><br><h4>Are additional videos being released at this time?</h4>
 No.
 
-<br><br><h4>What next?</h4>
-
+<br><br><h4>What if I have further questions?</h4>
+Please post your questions to the <a href="https://groups.google.com/forum/#!forum/meva-data-users">meva-data-users group</a> or directly to us at <a href="mailto:mevadata@kitware.com">mevadata@kitware.com</a>.
 
 </div>
 </div>
