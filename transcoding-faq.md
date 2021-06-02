@@ -1,4 +1,5 @@
 ---
+layout: page
 title: MEVA transcoding FAQ
 ---
 
