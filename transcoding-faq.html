@@ -12,34 +12,39 @@ title: MEVA transcoding FAQ
 Changelog:
 <small>
 <ul>
+  <li>v2.0 20jun2021 Updated with post-upload status
   <li>v1.0 02jun2021 Initial release
 </ul>
 </small>
 
-<br><br><h4>What is being proposed and why?</h4>
-We are planning to replace all ground camera videos (from the
+<br><br><h4>What data has been updated and why?</h4>
+We have replaced all ground camera videos (from the
       school, admin, hospital, and bus nodes) with transcoded
-      versions. The current videos were copied directly off the NVR
+      versions. The original ("r0") videos were copied directly off the NVR
       units used during the original collect back in 2018. Some of
       these files contain errors which prevent software such as ffmpeg
       from, for example, seeking to random points in the video. The
       transcoded versions should have fewer errors in general and support
-seeking in particular.
+seeking in particular.<p>
+Following a two-week comment period, the transcoded videos ("r13")
+were uploaded the evening of June 20, 2021.<p>
+Note that any future ground camera videos we release will be recoded in this same format.
 
-
-<br><br><h4>What happens next?</h4>
-A selection of transcoded videos are available for review (see below); we invite your feedback and questions. Our current plan is to switch the videos over sometime on the weekend of June 19-20, 2021.
-
-<br><br><h4>Where can the sample transcoded videos be obtained?</h4>
-      We've uploaded 630 transcoded videos (about 67GB); they can be downloaded via e.g.
-      <br><p>
-      <tt>aws s3 sync s3://mevadata-public-01/recode-r13-samples your-local-directory</tt>
+<br><br><h4>Where are the new videos?</h4>
+The r0 videos were in three s3 "directories": drop-01, drop-02, and
+drop-03. All transcoded videos are available in a new direcory:
+<br><p>
+<tt>s3://mevadata-public-01/drops-123-r13</tt>
+<br>
+They may be downloaded via e.g.
+<br><p>
+<tt>aws s3 sync s3://mevadata-public-01/drops-123-r13 your-local-directory</tt>
 
 
 <br><br><h4>What format are the transcoded videos?</h4>
 The transcoded videos are still H.264 in an AVI container.
 
-<br><br><h4>How have the videos been transcoded?</h4>
+<br><br><h4>How were the videos transcoded?</h4>
 The general process was that each video was broken out into frames;
       these frames were then recombined back into the transcoded
       video. The script we used is <a href="resources/transcode-meva-r13.pl">available</a>. The DIVA
@@ -70,7 +75,7 @@ NIST is already using identically transcoded videos on the <a href="https://acte
 No, only the ground cameras have been transcoded.
 
 <br><br><h4>Will every video be recoded?</h4>
-No, a small number were too corrupted to be transcoded.
+No, a small number were too corrupted to be transcoded. A list of videos which were not transcoded is available <a href="resources/r0-videos-only-list.txt">here</a>.
 
 <br><br><h4>Are additional videos being released at this time?</h4>
 No.
@@ -81,4 +86,3 @@ Please post your questions to the <a href="https://groups.google.com/forum/#!for
 </div>
 </div>
 </section>
-

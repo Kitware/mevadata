@@ -23,8 +23,8 @@ in high-end, research-grade video data. Camera G639 has been rotated. We are pla
 
 <h2>Access</h2>
 
-The MEVA Known Facility Dataset 1 ("KF1") is approximately 331 hours
-of video across 4304 video clips totalling 570 GB. It is available via
+The MEVA Known Facility Dataset 1 ("KF1") is approximately 330 hours
+of video across 4001 video clips totalling 470 GB. It is available via
 Amazon Simple Storage Service (S3) via a no-cost download sponsored by
 Amazon's AWS Public Dataset Program. The s3 bucket name is <tt>mevadata-public-01</tt>.<p>
 
@@ -33,12 +33,10 @@ downloading from S3, e.g. s3cmd, available at
 <a href="https://s3tools.org/s3cmd">https://s3tools.org/s3cmd</a>. Once installed, commands similar to<p>
 
 <pre>
-$ aws s3 sync s3://mevadata-public-01/drop-01 .
-$ aws s3 sync s3://mevadata-public-01/drop-02 .
+$ aws s3 sync s3://mevadata-public-01/drops-123-r13 .
 </pre>
 
-...will synchronize both drop-01 and drop-02 (described below) into
-the current directory.<p>
+...will synchronize the ground camera 'drops-123-r13' directory into the current directory.<p>
 
 Kitware does not endorse or warrant the utility of any particular S3
 client.  Your use of Amazon S3 is subject to Amazon's Terms of
@@ -50,30 +48,34 @@ assistance with Amazon services.<p>
 
 <h2>Directory Structure & Filenames</h2>
 
-The data is divided into several drops; each drop has the same
-directory structure. As of this writing, there are four drops:
+The original ground camera data was staged in three drops. As of 20
+June 2021, these videos have been transcoded and are available in a
+single directory;  see <a href="transcoding-faq.html">the transcoding
+FAQ</a> for more details.
+
+The data is available in:
 
 <ul>
-<li>drop-01 : 2223 clips / 292 GB / 184 hours
-<li>drop-02 : 1054 clips / 112 GB / 72.9 hours
-<li>drop-03 : 852 clips / 111 GB / 70 hours
+<li>drops-123-r13 : 3956 clips / 444 GB / 324.2 hours
 <li>uav-drop-01 : 45 clips / 26 GB / 4.6 hours
 </ul>
 
 The directory organization follows a video/facility/date/hour/video
-clip structure. Video files are typically five minutes in length, and
+clip structure. Ground camera video files are typically five minutes in length, and
 filenames have the following structure:<p>
 
 <pre>
 YYYY-MM-DD.timestamp-start.timestamp-end.camera-location.camera-number
 </pre>
 
-For example, the filename <tt>2018-03-07.16-50-00.16-55-00.admin.G329.avi</tt> is parsed as:
+For example, the filename <tt>2018-03-07.16-50-00.16-55-00.admin.G329.r13.avi</tt> is parsed as:
 <ul>
 <li>Recorded started on March 7, 2018 starting at 16:50:00.
 <li>Recording ended at 16:55:00.
 <li>The camera was located in/on the admin building (see metadata, below).
 <li>The camera number was G329.
+<li>This clip has been  <a href="transcoding-faq.html">transcoded per
+  the 'r13' process</a>.
 </ul>
 
 The video data is organized into a four-level hierarchy of facility
@@ -82,7 +84,7 @@ units whose clocks were synchronized via GPS. The NAS software was
 configured to record five-minute clips; however, clips do not all
 necessarily start or stop on even five-minute boundaries. A few clips
 may be shorter than five minutes due to transmission errors or
-collection event anomalies. In particular, some clips in drop-02 were
+collection event anomalies. Some clips were
 collected at the beginning of the event and may be shorter than five
 minutes.<p>
 
@@ -91,6 +93,9 @@ more details can be found in the UAV data readme at <a href="https://s3.amazonaw
 
 <h3>Dataset updates</h3>
 <div id="dataset-updates"></div>
+
+<b>20 June 2021</b>: The ground camera videos have been transcoded; see <a href="transcoding-faq.html">the transcoding
+FAQ</a> for more details.
 
 <b>29 April 2020</b>: Two dataset updates:
 <ul>
@@ -140,6 +145,7 @@ Projects Activity contract number 2017-16110300001.
 
 <h1>Changelog</h1>
 <ul>
+<li>20-jun-2021: Updated with revised directories after transcoding.
 <li>02-jun-2021: HTML version; updated with citation information and transcoding faq.
 <li>29-apr-2019: Updated for section 3.1
 <li>12-dec-2019: Updated for drop-03
