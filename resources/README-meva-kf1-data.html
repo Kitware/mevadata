@@ -48,19 +48,42 @@ assistance with Amazon services.<p>
 
 <h2>Directory Structure & Filenames</h2>
 
+The data directory structure is:
+
+<pre>
+[root]
+├── drops-123-r13
+├── drop-4-hadcv22 [see note below]
+├── examples
+├── mutc-3d-model
+├── uav-drop-01
+└── updates-r13
+</pre>
+
+The directory contents are:
+
+<ul>
+  <li><b>drops-123-r13</b> : Ground camera video; 3956 clips / 444 GB / 324.2 hours
+  <li><b>drop-4-hadcv22</b> : Ground camera video; 201 clips / 28 GB / 16.75 hours <b><i>See note below</i></b>
+  <li><b>examples</b> : Example annotations of DIVA activities
+  <li><b>mutc-3d-model</b> : 3D point cloud model of the collection venue
+  <li><b>uav-drop-01</b> : UAV video
+  <li><b>updates-r13</b> : Ground camera videos us in the ActEV leaderboard which were overlooked in the original drops
+</ul>
+
+<hr>
+<h3>NOTE REGARDING USE OF THE HADCV22 DATA</h3>
+<div id="hadcv22-note"></div>
+ The drop-4-hadcv22 data is provided for use with the <a href="https://actev.nist.gov/SRL">HADCV22 Self-Reported Leaderboard Challenge</a>. This data should <b>not</b> be used for training any submissions to the <a href="https://actev.nist.gov"</a>NIST ActEV</a> leaderboards.
+<hr>
+
+<p>
 The original ground camera data was staged in three drops. As of 20
 June 2021, these videos have been transcoded and are available in a
 single directory;  see <a href="transcoding-faq.html">the transcoding
 FAQ</a> for more details.
 
-The data is available in:
-
-<ul>
-<li>drops-123-r13 : 3956 clips / 444 GB / 324.2 hours
-<li>uav-drop-01 : 45 clips / 26 GB / 4.6 hours
-</ul>
-
-The directory organization follows a video/facility/date/hour/video
+Ground camera video directories follow a video/facility/date/hour/video
 clip structure. Ground camera video files are typically five minutes in length, and
 filenames have the following structure:<p>
 
@@ -95,6 +118,8 @@ more details can be found in the UAV data readme at <a href="https://s3.amazonaw
 <div id="dataset-updates"></div>
 
 <ul>
+<li><b>17 Sept 2021</b>: Drop-4-hadcv22 ground camera video to support the <a href="https://actev.nist.gov/SRL">HADCV22 Self-Reported Leaderboard Challenge</a> released.
+
 <li><b>20 June 2021</b>: The ground camera videos have been transcoded; see <a href="transcoding-faq.html">the transcoding
 FAQ</a> for more details.
 
@@ -147,6 +172,7 @@ Projects Activity contract number 2017-16110300001.
 
 <h1>Changelog</h1>
 <ul>
+<li>17-sep-2021: Updated for drop-4-hadcv22.
 <li>20-jun-2021: Updated with revised directories after transcoding.
 <li>02-jun-2021: HTML version; updated with citation information and transcoding faq.
 <li>29-apr-2019: Updated for section 3.1
