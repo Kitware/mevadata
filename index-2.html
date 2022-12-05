@@ -1,0 +1,293 @@
+---
+layout: page
+title: Mevadata
+permalink: /index-2.html
+---
+
+<base href="{{ site.baseurl }}/" />
+<!-- Slider Start -->
+<section id="slider">
+  <div class="container">
+    <div class="row">
+      <div class="block">
+        <h1 class="animated fadeInUp">The Multiview Extended Video
+        with Activities (MEVA) dataset w/ MEVID</h1>
+        <p class="animated fadeInUp"> The large-scale MEVA dataset is designed for activity
+          detection in multi-camera environments. It was created on the Intelligence Advanced
+          Research Projects Activity (IARPA) Deep Intermodal Video Analytics (DIVA) program 
+          to support DIVA performers and the broader research community.</p>
+        <p class="animated fadeInUp"><strong>NEWS:<br>12 December 2019:
+        We've added drop-03, adding 70 hours of ground-cam video for a
+        total of 333 hours of ground-camera and UAV video.<br>
+        26 November 2019: We're pleased to announce annotations for an
+		addition 3.5 hours of MEVA data, resulting in 16 hours of annotated data!
+		Annotations are available via the
+		<a href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/annotation/DIVA-phase-2/MEVA/meva-annotations" style="color:#95e97a">git repository</a>.<br/>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Wrapper Start -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>About MEVA data</h2>
+          </div> <!-- section title  -->
+          <p>
+          MEVA aims to build a corpus of activity video collected from
+          multiple viewpoints in realistic settings.</p>
+
+		  <p>
+		  There is a MEVA data users Google group to facilitate communication and collaboration 
+		  for those interested in working with the data. Join the conversation through the
+		  <a href="https://groups.google.com/forum/#!forum/meva-data-users">meva-data-users group</a>. </p>
+
+          <h2>Releases</h2>
+          <h3>Known Facility Release #1 ("KF1"):</h3>
+
+          <p> The KF1 data was collected over a total of three weeks
+          at the Muscatatuck Urban Training Center (MUTC) with a team of over
+          100 actors performing in various scenarios.  The fields of
+          view, both overlapping and non-overlapping, capture person
+          and vehicle activities in indoor and outdoor
+          environments. There were multiple realistic scenarios with a
+          variety of scripted and non-scripted activities.</p>
+
+          <p>The camera infrastructure included
+            commercial-off-the-shelf EO cameras; thermal infrared
+            cameras as part of several IR-EO pairs; two DJI Inspire 1
+            v2 drones, and a range of still images from handheld
+            cameras.</p>
+
+          </div> <!-- block -->
+
+      </div><!-- .col-md-5 close -->
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <video controls width="100%" style="margin: 32px 0 20px;">
+            <source src="video/mevadata-kf1-sample-footage.mp4" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+          Montage of randomly selected KF1 ground camera clips (re-encoded for accelerated playback.)
+        </div> <!-- block -->
+        <div class="block">
+          <video controls width="100%" style="margin: 32px 0 20px;">
+            <source src="video/uav-clips.mp4" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+          Montage of randomly selected KF1 UAV video (re-encoded for accelerated playback.)
+        </div> <!-- block-->
+      </div> <!-- col -->
+    </div> <!-- row -->
+  </div> <!-- container -->
+</section>
+
+<section id="feature">
+  <div class="container">
+  <div class="row">
+    
+  <div class="col-md-6 col-sm-12">
+  <div class="block">
+    <video controls width="100%" style="margin: 32px 0 0px;">
+    <source src="video/mesh-standin-scaled-fast.mp4" type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+    </video>
+    <p style="text-align:center;background-color: #EEEEEE">Visualization of the fine-grained MUTC 3D model.</p>
+  </div> <!-- block -->
+  <div class="block">
+    <video controls width="100%" style="margin: 32px 0 0px;">
+    <source src="video/2018-03-11.16-20-00.16-25-00.school.G330.annotated.mp4" type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+    </video>
+    <p style="text-align:center;background-color: #EEEEEE">Annotation sample (accelerated for display.)</p>
+  </div> <!-- block -->
+  </div><!-- .col-md-7 close -->
+<!--  <div class="col-md-6 col-md-offset-6">   -->
+  <div class="col-md-6 col-md-12">
+    <div id="getting-data">
+      <h2>ACCESSING AND USING MEVA</h2>
+      <h3>License</h3>
+      <p>All MEVA data is available for use under a <a
+      href="https://creativecommons.org/licenses/by/4.0/">CC BY-4.0
+      license</a>; the general MEVA data license is available <a
+      href="resources/MEVA-data-license.txt">here</a>.</p>
+      <h3>Video data on AWS</h3>
+      <p>MEVA video data is hosted on an Amazon Web Services (AWS) S3 bucket; download is provided at no cost via
+      sponsorship through <a href="https://aws.amazon.com/opendata/public-datasets/">Amazon's AWS Public Dataset Program</a>.</p>
+      <pnm>As of 12 Dec 2019, the video corpus includes:</pnm>
+          <ul>
+            <li> 328 hours (516GB) of ground camera data
+            <li> 4.6 hours (26GB) of UAV data
+          </ul>
+          <h4><a href="resources/README-meva-kf1-data.txt">Click here for download instructions.</a></h4>
+
+       <h3>MEVA data git repository</h3>
+          <p>The <a href="https://gitlab.kitware.com/meva/meva-data/repo">MEVA data git repository</a> is an evolving collection of metadata and annotations released for the MEVA KF1 data. Highlights include:</p>
+          <h4>Metadata</h4>
+          <ul>
+            <li> KF1 metadata package, including: a PDF of the site
+        map with approximate camera locations and sample FOVs, a list
+      of all files in the KF1 corpus, and camera datasheets.
+            <a href="https://data.kitware.com/#item/5ce40a518d777f072bc1e920">Click to download metadata package.</a>
+            <li> Camera models in KRTD format (<a href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/metadata/camera-models">gitlab link</a>)
+            <li> 3D site model of MUTC in <a href="https://en.wikipedia.org/wiki/PLY_(file_format)">PLY format</a>, available in <a href="https://mevadata-public-01.s3.amazonaws.com/mutc-3d-model/mutc.ply"> fine (293MB)</a> and <a href="https://mevadata-public-01.s3.amazonaws.com/mutc-3d-model/mutc_coarse.ply">coarse (83MB)</a> resolutions
+            </ul>
+
+            <h4>Annotations</h4>
+            <pnm>A subset of the MEVA KF1 data has been annotated for the activities defined in the <a href="https://actev.nist.gov">NIST ActEV Challenge</a>. The released annotations were generated by the same workflow used to produce the sequestered annotations used on the <a href="https://actev.nist.gov/sdl">ActEV Sequestered Data Leaderboard.</a> Resources include:</pnm>
+            <ul>
+              <li> The <a href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/annotation/DIVA-phase-2/MEVA/">annotations</a>.
+              <li> The <a href="https://gitlab.kitware.com/meva/meva-data-repo/blob/master/documents/MEVA-Annotation-Definitions.pdf">ActEV Annoation Definitions</a> for MEVA data.
+              <li> Renderings of <a href="https://data.kitware.com/#item/5cddc85b8d777f072bb0b7aa">activity exemplars</a>.
+              </ul>
+      </div> <!-- block -->
+      </div>  <!-- col -->
+  </div>  <!-- row -->
+</div>  <!-- container -->
+</section>
+
+<section id="service">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Annotating MEVA</h2>
+        <p>The MEVA data can be annotated using your preferred annotation toolchain. For annotating
+          and using the MEVA data, the following steps are recommended:</p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-6 col-md-4">
+        <div class="service-item">
+          <i class="ion-checkmark-circled"></i>
+          <h4>Download data</h4>
+          See the instructions <a href="#getting-data">here</a> to
+  obtain the data.
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="service-item">
+          <i class="ion-qr-scanner"></i>
+          <h4>View annotation exemplars</h4>
+          <p>Download and review short clips of visualized annotations for each activity type.</p>
+          <a href="https://data.kitware.com/#item/5cddc85b8d777f072bb0b7aa" class="button-primary">Download exemplars</a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="service-item">
+          <i class="ion-code-download"></i>
+          <h4>Review Annotation Guidelines</h4>
+          <p>Download the current activity definitions. These should guide which activities
+            and objects are annotated.</p>
+          <a href="https://gitlab.kitware.com/meva/meva-data-repo/blob/master/documents/MEVA-Annotation-Definitions.pdf" class="button-primary">Download guidelines</a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="service-item">
+          <i class="ion-qr-scanner"></i>
+          <h4>Generate annotations</h4>
+<p>Generate schema like <a
+  href="https://gitlab.kitware.com/meva/meva-data-repo/tree/master/documents/schemas">
+  these</a> based on the format <a href="https://gitlab.kitware.com/meva/meva-data-repo/blob/master/documents/MEVA_Annotation_JSON.pdf">described
+  here</a> as part of our <a href="https://gitlab.kitware.com/meva/meva-data-repo">annotation git repository</a>.
+       </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="service-item">
+          <i class="ion-upload"></i>
+          <h4>Contribute annotations</h4>
+          <p>Contributing your annotations will increase the utility
+  of the MEVA KF1 dataset for everyone. Please clone our <a
+  href="https://gitlab.kitware.com/meva/meva-data-repo">annotation git
+  repository</a> and file a merge request to have your annotations
+  pooled back into the master branch.
+</p>
+        </div>
+      </div>
+
+	  </div>
+{% comment %}
+<!-- comment out vpview until it's json compliant
+      <div class="row vp-view">
+		<div class="block">
+          <p><strong>Kitware’s vpView</strong> tool can be used for creating the activity annotations.
+			To get started using vpView, the following resources are available:</p>
+			<ul>
+				<li><a href="https://data.kitware.com/#folder/5c8a72438d777f072b97f9e1">vpView installer and required files (Linux only)</a></li>
+				<li><a href="https://gitlab.kitware.com/meva/meva-data-repo/blob/master/documents/MEVA-Annotation-Definitions.pdf">Annotation Definitions</a>, including chart of track requirements per activity type.</li>
+				<li><a href="https://data.kitware.com/#item/5cddc7698d777f072bb0b765">Annotating with vpView instructions</a></li>
+			</ul>
+		</div>
+                </div>
+-->
+{% endcomment %}
+    </div>
+</section>
+
+{% comment %}
+<!-- CALL TO ACTION START
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>We design delightful digital experiences.</h2>
+          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
+          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> CALL TO ACTION END -->
+
+<!-- CONTENT START
+<section id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>Fun Facts About Us</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        {% if site.data.funfacts.size > 0 %}
+        <div class="block">
+          {% for ff in site.data.funfacts %}
+          <ul class="counter-box clearfix">
+            <li>
+              <div class="block">
+                <i class="{{ ff.icon }}"></i>
+                <h4 class="counter">{{ ff.counter }}</h4>
+                <span>{{ ff.text }}</span>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      <div class="col-md-6">
+        {% if site.data.testimonials.size > 0 %}
+        <div class="testimonial-carousel">
+          <div id="testimonial-slider" class="owl-carousel">
+            {% for tm in site.data.testimonials %}
+            <div>
+                <img src="img/cotation.png" alt="IMG">
+                <p>{{ tm.testimonial }}</p>
+                <div class="user">
+                  <img src="{{ tm.image }}" alt="Pepole">
+                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
+                </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section> CONTENT END-->
+{% endcomment %}
