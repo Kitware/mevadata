@@ -199,6 +199,10 @@ font header .navbar-default .navbar-nav li a:hover {
 #intro .section-title {
   margin-bottom: 0px;
 }
+#intro .section-title-c {
+    margin-bottom: 0px;
+    text-align: center;
+}
 #intro .section-title p {
   padding-top: 20px;
   color: #454545;
