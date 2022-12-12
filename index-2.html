@@ -71,7 +71,7 @@ permalink: /index-2.html
 <section id="intro">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-5 col-sm-12">
         <div class="block">
           <div class="section-title">
             <h2>About MEVA data</h2>
@@ -152,6 +152,55 @@ permalink: /index-2.html
     </div> <!-- row -->
   </div> <!-- container -->
 </section>
+
+
+<div id="mevid"></div>
+<section id="intro">
+  <div class="container">
+    <div class="row">
+        <div class="section-title-c">
+          <h2>MEVID Person Re-Identification Data</h2>
+        </div>
+        <div class="block"
+          <p>We're excited to release <strong>MEVID: Multi-view Extended Videos with Identities for Video Person Re-Identification</strong>. This additional layer of annotation on MEVA video provides:
+          <ul>
+            <li> An additional 170 clips (approximately 14 hours) of previously unreleased MEVA video
+            <li> 158 identities, with an average of four outfits per identity
+            <li> 33 viewpoints
+            <li> 17 locations
+            <li> over 1.7M bounding boxes
+            <li> over 10.46M frames
+          </ul>
+          Baseline results and our annotation toolchain are also provided.
+        </div> <!-- service-block -->
+    </div>  <!-- row -->
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <h2>Obtaining MEVID</h2>
+          <p>The MEVID annotations and associated actor checkin photos are available from <a href="https://github.com/Kitware/mevid">https://github.com/Kitware/mevid</a>.</p>
+          <p>The MEVID video is a subset of the MEVA video available from <a href="#getting-data">this site</a>.</p>
+        <h2>Citing MEVID</h2>
+          <div id="citing-mevid"></div>
+          <p>
+          The dataset is described in our paper, <a href="https://arxiv.org/abs/2211.04656">MEVID: Multi-view Extended Videos with Identities for Video Person Re-Identification</a>, due to appear in <a href="https://wacv2023.thecvf.com/home">WACV 2023</a>. The bibtex citation is:
+            <pre>
+@InProceedings{Davila_MEVID_2023,
+    author = {Davila, Daniel and Du, Dawei and Lewis, Bryon and Funk, Christopher and Van Pelt, Joseph and Collins, Roderic and Corona, Kellie and Brown, Matt and McCloskey, Scott and Hoogs, Anthony and Clipp, Brian},
+    title = {MEVID: Multi-view Extended Videos with Identities for Video Person Re-Identification},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2023}
+}
+          </pre>
+      </div> <!-- block ... -->
+    </div> <!-- col-md-5... -->
+    <div class="col-md-7 col-sm-12">
+     <img src="resources/mevid-example.png" alt="MEVID example" width="100%">
+       <p>Actor checkin photos (top row) are associated with tracklets from MEVA videos (middle and bottom rows) to create global IDs.
+       </div> <!-- col-md-7... -->
+       </div> <!-- container ... -->
+       </section>
+
 
 <section id="feature">
   <div class="container">
@@ -301,50 +350,3 @@ permalink: /index-2.html
 {% endcomment %}
     </div>
 </section>
-
-<div id="mevid"></div>
-<section id="intro">
-  <div class="container">
-    <div class="row">
-        <div class="section-title-c">
-          <h2>MEVID Person Re-Identification Data</h2>
-        </div>
-        <div class="block"
-          <p>We're excited to release <strong>MEVID: Multi-view Extended Videos with Identities for Video Person Re-Identification</strong>. This additional layer of annotation on MEVA video provides:
-          <ul>
-            <li> An additional 170 clips (approximately 14 hours) of previously unreleased MEVA video
-            <li> 158 identities, with an average of four outfits per identity
-            <li> 33 viewpoints
-            <li> 17 locations
-            <li> over 1.7M bounding boxes
-            <li> over 10.46M frames
-          </ul>
-          Baseline results and our annotation toolchain are also provided.
-        </div> <!-- service-block -->
-    </div>  <!-- row -->
-      <div class="col-md-5 col-sm-12">
-        <div class="block">
-          <h2>Obtaining MEVID</h2>
-          <p>The MEVID annotations and associated actor checkin photos are available from <a href="https://github.com/Kitware/mevid">https://github.com/Kitware/mevid</a>.</p>
-          <p>The MEVID video is a subset of the MEVA video available from <a href="#getting-data">this site</a>.</p>
-        <h2>Citing MEVID</h2>
-          <div id="citing-mevid"></div>
-          <p>
-          The dataset is described in our paper, <a href="https://arxiv.org/abs/2211.04656">MEVID: Multi-view Extended Videos with Identities for Video Person Re-Identification</a>, due to appear in <a href="https://wacv2023.thecvf.com/home">WACV 2023</a>. The bibtex citation is:
-            <pre>
-@InProceedings{Davila_MEVID_2023,
-    author = {Davila, Daniel and Du, Dawei and Lewis, Bryon and Funk, Christopher and Van Pelt, Joseph and Collins, Roderic and Corona, Kellie and Brown, Matt and McCloskey, Scott and Hoogs, Anthony and Clipp, Brian},
-    title = {MEVID: Multi-view Extended Videos with Identities for Video Person Re-Identification},
-    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-    month     = {January},
-    year      = {2023}
-}
-          </pre>
-      </div> <!-- block ... -->
-    </div> <!-- col-md-5... -->
-    <div class="col-md-7 col-sm-12">
-     <img src="resources/mevid-example.png" alt="MEVID example" width="100%">
-       <p>Actor checkin photos (top row) are associated with tracklets from MEVA videos (middle and bottom rows) to create global IDs.
-       </div> <!-- col-md-7... -->
-       </div> <!-- container ... -->
-       </section>
