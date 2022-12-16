@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Mevadata
-permalink: /
+permalink: /index.html
 ---
 
-<base href="{{ site.baseurl }}/" />
+<base href="{{ site.baseurl }}/index.html" />
 <!-- Slider Start -->
 <section id="slider">
   <div class="container">
@@ -13,9 +13,11 @@ permalink: /
         <h1 class="animated fadeInUp">The Multiview Extended Video with Activities (MEVA) dataset</h1>
         <p class="animated fadeInUp"> The large-scale MEVA dataset is designed for activity
           detection in multi-camera environments. It was created on the Intelligence Advanced
-          Research Projects Activity (IARPA) Deep Intermodal Video Analytics (DIVA) program 
+          Research Projects Activity (IARPA) Deep Intermodal Video Analytics (DIVA) program
           to support DIVA performers and the broader research community.</p>
         <p class="animated fadeInUp"><strong>NEWS:<br>
+        <span style="color:#e97a7a">16 December 2022: MEVID: Multi-view Extended Videos with Identities for Video Person Re-Identification is released! We've developed an additional layer of annotations for person re-identification on MEVA video. Additional information and a link to our WACV23 paper may be <a href="#mevid" style="color:#95e97a">found below</a>.<br/>
+<!--
         <span style="color:#e97a7a">15 November 2021: On-line
         interactive visualizations
         of MEVA ground truth</a> are available; see <a href="#dive" style="color:#95e97a"> here </a> for more
@@ -37,7 +39,6 @@ permalink: /
         href="https://mevadata.org/transcoding-faq.html"
         style="color:#95e97a">the
         transcoding FAQ</a> for transcoding details.<br/>
-<!--
         24 Feb 2021: We have released additional annotations from the
         T&E team; see <a href="#annotations"  style="color:#95e97a"> here </a> for more
           details.<br/>
@@ -151,6 +152,54 @@ permalink: /
     </div> <!-- row -->
   </div> <!-- container -->
 </section>
+
+
+<div id="mevid"></div>
+<section id="intro">
+  <div class="container">
+    <div class="row">
+        <div class="section-title-c">
+          <h2>MEVID Person Re-Identification Data</h2>
+        </div>
+        <div class="block"
+          <p>We're excited to release <strong>MEVID: Multi-view Extended Videos with Identities for Video Person Re-Identification</strong>. This additional layer of annotation on MEVA video provides:
+          <ul>
+            <li> An additional 289 clips (approximately 24 hours) of previously unreleased MEVA video
+            <li> 158 identities, with an average of four outfits per identity
+            <li> 33 viewpoints
+            <li> 17 locations
+            <li> over 1.7M bounding boxes
+            <li> over 10.46M frames
+          </ul>
+          Baseline results and our annotation toolchain are also provided.
+        </div> <!-- service-block -->
+    </div>  <!-- row -->
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <h2>Obtaining MEVID</h2>
+          <p>Instructions for downloading MEVID annotations and supporting video may be found on <a href="https://github.com/Kitware/mevid">https://github.com/Kitware/mevid</a>.</p>
+        <h2>Citing MEVID</h2>
+          <div id="citing-mevid"></div>
+          <p>
+          The dataset is described in our paper, <a href="https://arxiv.org/abs/2211.04656">MEVID: Multi-view Extended Videos with Identities for Video Person Re-Identification</a>, due to appear in <a href="https://wacv2023.thecvf.com/home">WACV 2023</a>. The bibtex citation is:
+            <pre>
+@InProceedings{Davila_MEVID_2023,
+    author = {Davila, Daniel and Du, Dawei and Lewis, Bryon and Funk, Christopher and Van Pelt, Joseph and Collins, Roderic and Corona, Kellie and Brown, Matt and McCloskey, Scott and Hoogs, Anthony and Clipp, Brian},
+    title = {MEVID: Multi-view Extended Videos with Identities for Video Person Re-Identification},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2023}
+}
+          </pre>
+      </div> <!-- block ... -->
+    </div> <!-- col-md-5... -->
+    <div class="col-md-7 col-sm-12">
+     <img src="resources/mevid-example.png" alt="MEVID example" width="100%">
+       <p>Actor checkin photos (top row) are associated with tracklets from MEVA videos (middle and bottom rows) to create global IDs.
+       </div> <!-- col-md-7... -->
+       </div> <!-- container ... -->
+       </section>
+
 
 <section id="feature">
   <div class="container">
@@ -300,69 +349,3 @@ permalink: /
 {% endcomment %}
     </div>
 </section>
-
-{% comment %}
-<!-- CALL TO ACTION START
-<section id="call-to-action">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h2>We design delightful digital experiences.</h2>
-          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
-          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> CALL TO ACTION END -->
-
-<!-- CONTENT START
-<section id="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="section-title text-center">
-        <h2>Fun Facts About Us</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        {% if site.data.funfacts.size > 0 %}
-        <div class="block">
-          {% for ff in site.data.funfacts %}
-          <ul class="counter-box clearfix">
-            <li>
-              <div class="block">
-                <i class="{{ ff.icon }}"></i>
-                <h4 class="counter">{{ ff.counter }}</h4>
-                <span>{{ ff.text }}</span>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-      </div>
-      <div class="col-md-6">
-        {% if site.data.testimonials.size > 0 %}
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
-            {% for tm in site.data.testimonials %}
-            <div>
-                <img src="img/cotation.png" alt="IMG">
-                <p>{{ tm.testimonial }}</p>
-                <div class="user">
-                  <img src="{{ tm.image }}" alt="Pepole">
-                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
-                </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-</section> CONTENT END-->
-{% endcomment %}
