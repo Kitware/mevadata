@@ -33,7 +33,7 @@ downloading from S3, e.g. s3cmd, available at
 <a href="https://s3tools.org/s3cmd">https://s3tools.org/s3cmd</a>. Once installed, commands similar to<p>
 
 <pre>
-$ aws s3 sync s3://mevadata-public-01/drops-123-r13 .
+$ aws s3 sync s3://mevadata-public-01/drops-123-r13 . --no-sign-request
 </pre>
 
 ...will synchronize the ground camera 'drops-123-r13' directory into the current directory.<p>
